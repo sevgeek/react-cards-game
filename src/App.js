@@ -5,9 +5,6 @@ import './App.css';
 import Dashboard from './components/Dashboard/Dashboard'
 import cardsArray from './components/Dashboard/array'
 
-// Import functions
-import shuffleCards from './functions/index'
-
 function App() {
 
 	/** State: состояние раунда. Его номер и результат */
@@ -67,7 +64,7 @@ function App() {
 				{gameStatus
 					? null
 					: <Dashboard
-						cardsArray={shuffleCards(cardsArray)}
+						cardsArray={cardsArray}
 						endGameStatus={() => setGameStatus(!gameStatus)}
 						roundResultText={(text) => setRoundInfo({ ...roundInfo, result: text })}
 						roundIncrement={() => setRoundInfo({ ...roundInfo, number: roundInfo.number + 1 })} />

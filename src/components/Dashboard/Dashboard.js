@@ -4,13 +4,16 @@ import './Dashboard.css'
 // Import components
 import Card from '../Card/Card'
 
+// Import functions
+import shuffleCards from '../../functions/index'
+
 const Dashboard = ({ cardsArray, roundResultText, roundIncrement, endGameStatus }) => {
 
 	/**
 	 * State
 	 * Исходные карточки
 	 */
-	const [cards, setCards] = useState(cardsArray.map((card, index) => (
+	const [cards, setCards] = useState(shuffleCards(cardsArray).map((card, index) => (
 		{
 			color: card,
 			index: index,
