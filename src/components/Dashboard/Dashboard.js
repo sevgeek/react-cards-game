@@ -145,12 +145,12 @@ const Dashboard = ({ cardsArray, roundResultText, roundIncrement, endGameStatus 
 
 	return (
 		<div className='cards'>
-			{cards.map((card) =>
+			{cards.map(({ index, color, selected }) =>
 				<Card
-					key={card.index}
-					index={card.index}
-					color={card.color}
-					selected={card.selected}
+					key={index}
+					index={index}
+					color={color}
+					selected={selected}
 					clickHandler={(e) => handlerClickOnCard(e)} />
 			)}
 		</div>
