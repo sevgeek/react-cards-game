@@ -12,6 +12,7 @@ const Dashboard = ({ cardsArray, roundResultText, roundIncrement, endGameStatus 
 	/**
 	 * State
 	 * Исходные карточки
+	 * В начале делаем случайную сортировку карточек, после методом формируем объекты карточек
 	 */
 	const [cards, setCards] = useState(shuffleCards(cardsArray).map((card, index) => (
 		{
