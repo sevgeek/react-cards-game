@@ -17,7 +17,7 @@
 
 Клонируйте репозиторий на свой компьютер.
 ```
-git clone
+git clone git@github.com:sevgeek/react-cards-game.git
 ```
 
 Переход в рабочий каталог.
