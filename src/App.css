@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.App {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+
+	box-sizing: border-box;
+	padding: 5%;
+}
+
+.App div {
+	align-self: center;
+}
+
+.board h2 {
+	text-align: center;
+}
