@@ -7,7 +7,7 @@ import './Card.css'
  * @param {String} color Цвет карточки
  * @param {Number} index Индекс карточки
  * @param {Boolean} selected Статус карточки (выбрана или нет)
- * @param {CallableFunction} clickHandler Call-back функция реагирования на клик по карточке
+ * @param {Function} clickHandler Call-back функция реагирования на клик по карточке
  */
 const Card = ({ color, index, selected, clickHandler }) => {
 
