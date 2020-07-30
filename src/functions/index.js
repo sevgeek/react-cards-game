@@ -1,9 +1,9 @@
 /**
  * @name shuffleCards
- * @description Функция случайно сортировки элементов массива
+ * @description Функция случайно сортировки элементов массива. Так же увеличиваем массив в два раза.
  * @param {Array} array Исходный массив карточек
  * @returns Sort array
  */
-export default function shuffleCards(array) {
-	return array.sort(() => Math.random() - 0.5)
-}
+const shuffleCards = array => array.concat(array).sort(() => Math.random() - 0.5)
+
+export default shuffleCards

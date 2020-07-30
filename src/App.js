@@ -9,7 +9,6 @@ import cardsArray from './components/Dashboard/array'
 import shuffleCards from './functions/index'
 
 function App() {
-	// cardsArray.push(...cardsArray)
 
 	/** State: состояние раунда. Его номер и результат */
 	const [roundInfo, setRoundInfo] = useState({
@@ -32,12 +31,12 @@ function App() {
 
 	/** Emoji object */
 	const emoji = {
-		thinkingFace: <i class='em em-thinking_face' ariaRole='presentation' ariaLabel='THINKING FACE'></i>,
-		star: <i class='em em-star2' ariaRole='presentation' ariaLabel='GLOWING STAR'></i>,
-		trophy: <i class='em em-trophy' ariaRole='presentation' ariaLabel='TROPHY'></i>,
-		game: <i class='em em-game_die' ariaRole='presentation' ariaLabel='GAME DIE'></i>,
-		thumbsUp: <i class='em em---1' ariaRole='presentation' ariaLabel='THUMBS UP SIGN'></i>,
-		thumbsDown: <i class='em em--1' ariaRole='presentation' ariaLabel='THUMBS UP SIGN'></i>
+		thinkingFace: <i className='em em-thinking_face'></i>,
+		star: <i className='em em-star2'></i>,
+		trophy: <i className='em em-trophy'></i>,
+		game: <i className='em em-game_die'></i>,
+		thumbsUp: <i className='em em---1'></i>,
+		thumbsDown: <i className='em em--1'></i>
 	}
 
 	// Приветственное сообщение

@@ -7,12 +7,4 @@ export default [
 	'blue',
 	'grey',
 	'purple',
-	'red',
-	'yellow',
-	'green',
-	'pink',
-	'orange',
-	'blue',
-	'grey',
-	'purple',
 ]
