@@ -5,7 +5,7 @@ import './Dashboard.css'
 import Card from '../Card/Card'
 
 // Import functions
-import shuffleCards from '../../functions/index'
+import { shuffleCards } from '../../functions/index'
 
 const Dashboard = ({ cardsArray, roundResultText, roundIncrement, endGameStatus }) => {
 

@@ -4,6 +4,4 @@
  * @param {Array} array Исходный массив карточек
  * @returns Sort array
  */
-const shuffleCards = array => array.concat(array).sort(() => Math.random() - 0.5)
-
-export default shuffleCards
+export const shuffleCards = array => array.concat(array).sort(() => Math.random() - 0.5)
