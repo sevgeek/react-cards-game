@@ -61,13 +61,11 @@ function App() {
 			</div>
 			<div className='board'>
 				{gameResult}
-				{gameStatus
-					? null
-					: <Dashboard
-						cardsArray={cardsArray}
-						endGameStatus={() => setGameStatus(!gameStatus)}
-						roundResultText={(text) => setRoundInfo({ ...roundInfo, result: text })}
-						roundIncrement={() => setRoundInfo({ ...roundInfo, number: roundInfo.number + 1 })} />
+				{gameStatus || <Dashboard
+					cardsArray={cardsArray}
+					endGameStatus={() => setGameStatus(!gameStatus)}
+					roundResultText={(text) => setRoundInfo({ ...roundInfo, result: text })}
+					roundIncrement={() => setRoundInfo({ ...roundInfo, number: roundInfo.number + 1 })} />
 				}
 			</div>
 		</div>
