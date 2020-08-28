@@ -2,6 +2,8 @@
 
 ## Тестовое задание на вакансию front-end разработчика
 
+![screenshot](https://raw.githubusercontent.com/sevgeek/react-cards-game/master/public/screenshot_ui.png)
+
 ## Описание игры
 Перед вами доска с плитками 4 на 4.
 
